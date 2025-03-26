@@ -1,4 +1,4 @@
-#Módulo 4: Herramientas y Plataformas
+Módulo 4: Herramientas y Plataformas
 
 
 Este módulo aborda las herramientas y plataformas esenciales utilizadas en Threat Hunting para la detección, análisis y respuesta ante amenazas de seguridad. Se exploran soluciones como SIEM, EDR, herramientas de análisis de logs, monitoreo de red y automatización con inteligencia artificial y machine learning.
