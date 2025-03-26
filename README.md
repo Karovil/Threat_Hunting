@@ -40,3 +40,6 @@ Laboratorios y ejercicios prácticos de threat hunting.
 🔹 Módulo 7: Integración con la Respuesta a Incidentes y Mejora Continua
 Coordinación con equipos de respuesta a incidentes.
 
+Coordinación con equipos de respuesta a incidentes.
+
+Documentación, actualización y mejora de procesos.
