@@ -161,40 +161,6 @@ http://localhost:5601
 ```
 Asegúrate de que los servicios de Wazuh y Kibana estén activos.
 
-```bash
-curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
-bash ./wazuh-install.sh -a
-```
-
----
-
-#### 📦 Instalación de agentes en los endpoints
-
-```bash
-curl -sO https://packages.wazuh.com/4.7/wazuh-agent.sh
-sudo bash ./wazuh-agent.sh -m <IP_DEL_MANAGER>
-```
-#### 🔧 Configuración de reglas personalizadas
-Edita el archivo:
-```bash
-/var/ossec/etc/rules/local_rules.xml
-```
-#### 🧠 Integraciones recomendadas
-MITRE ATT&CK para clasificación de amenazas.
-
-Alertas por correo.
-
-Dashboards personalizados en Kibana.
-
-#### 📊 Visualización
-Accede a:
-```bash
-http://localhost:5601
-```
-para dashboards en Kibana.
-
-
-
 💲 SIEM Comercial: Splunk Enterprise Security
 🔍 ¿Qué es Splunk ES?
 Splunk ES es una solución comercial avanzada para:
