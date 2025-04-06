@@ -29,31 +29,29 @@ Wazuh es una plataforma de seguridad gratuita basada en OSSEC que permite:
 ```bash
 curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh
 bash ./wazuh-install.sh -a
+```
 
 ---
 
 #### 📦 Instalación de agentes en los endpoints
 
-bash
-Copiar
-Editar
+```bash
 curl -sO https://packages.wazuh.com/4.7/wazuh-agent.sh
 sudo bash ./wazuh-agent.sh -m <IP_DEL_MANAGER>
-🔧 Configuración de reglas personalizadas
+```
+#### 🔧 Configuración de reglas personalizadas
 Edita el archivo:
-
-bash
-Copiar
-Editar
+```bash
 /var/ossec/etc/rules/local_rules.xml
-🧠 Integraciones recomendadas
+```
+#### 🧠 Integraciones recomendadas
 MITRE ATT&CK para clasificación de amenazas.
 
 Alertas por correo.
 
 Dashboards personalizados en Kibana.
 
-📊 Visualización
+#### 📊 Visualización
 Accede a: http://localhost:5601 para dashboards en Kibana.
 
 💲 SIEM Comercial: Splunk Enterprise Security
