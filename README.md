@@ -1,5 +1,5 @@
-#Threat Hunting - Fundamentos y Conceptos Clave de Ciberseguridad
-##Terminología esencial
+# Threat Hunting - Fundamentos y Conceptos Clave de Ciberseguridad
+## Terminología esencial
 Threat hunting o también conocido como “caza de amenazas cibernéticas”, se ha vuelto una pieza cada vez más vital para las organizaciones. Este mecanismo surge con el propósito de encontrar intrusiones y también para la prevención de estos.
 
 - ¿Qué es?
@@ -15,4 +15,11 @@ Estos hunters deben hacer hipótesis para así hallar un propósito al ataque y 
 **Table of Contents**
 
 [TOC]
-##Tácticas y Técnicas
+
+### ⚔️Tácticas y Técnicas
+
+
+- [Fundamentos](#⚔-Tácticas-y-Técnicas)
+- [Herramientas](#herramientas)
+- [Ejemplos](#ejemplos)
+- [Conclusión](#conclusión)
