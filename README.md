@@ -13,9 +13,9 @@ Importancia del enfoque proactivo en la detección de amenazas.
 Panorama actual de amenazas y casos recientes.
 
 🔹 Módulo 2: Fundamentos y Conceptos Clave de Ciberseguridad
-Terminología esencial: adversarios, TTPs, IOCs, entre otros.
+Terminología esencial: TTPs, IOCs, entre otros.
 
-Arquitectura de redes, protocolos y seguridad de sistemas.
+  Arquitecturas de redes, protocolos y seguridad de sistemas.
 
 🔹 Módulo 3: Metodologías y Frameworks de Threat Hunting
 Planteamiento de hipótesis para la detección proactiva.
