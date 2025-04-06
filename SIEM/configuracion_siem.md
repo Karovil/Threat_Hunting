@@ -99,6 +99,7 @@ systemctl start wazuh-agent
 systemctl status wazuh-agent
 ```
 🚫 Deshabilitar actualizaciones automáticas del agente
+
 Opción 1: Comentar el repositorio
 ```bash
 sed -i "s/^deb/#deb/" /etc/apt/sources.list.d/wazuh.list
@@ -110,43 +111,40 @@ echo "wazuh-agent hold" | dpkg --set-selections
 ```
 🛠 Configuración de reglas personalizadas
 Edita el archivo:
-
-bash
-Copiar
-Editar
+```bash
 sudo nano /var/ossec/etc/rules/local_rules.xml
+```
 Guarda los cambios y reinicia el agente:
-
-bash
-Copiar
-Editar
+```bash
 systemctl restart wazuh-agent
+```
 🔐 Registro manual del agente (opcional)
 Si prefieres registrar el agente manualmente desde el servidor Wazuh:
-
-bash
-Copiar
-Editar
+```bash
 /var/ossec/bin/manage_agents
+```
 Selecciona las opciones:
+
 
 Agregar un nuevo agente
 
+
 Establecer nombre y grupo
+
 
 Extraer clave
 
+
 En el agente: usar manage_agents para importar la clave
+
 
 Reiniciar el agente
 
 🧪 Prueba de conectividad
 Desde el servidor:
-
-bash
-Copiar
-Editar
+```bash
 /var/ossec/bin/agent_control -lc
+```
 Verifica que el nuevo agente aparezca en la lista.
 
 🧠 Integraciones recomendadas
@@ -158,11 +156,9 @@ Dashboards personalizados en Kibana para análisis visual centralizado.
 
 📊 Visualización
 Accede al dashboard de Kibana desde tu navegador:
-
-text
-Copiar
-Editar
+```bash
 http://localhost:5601
+```
 Asegúrate de que los servicios de Wazuh y Kibana estén activos.
 
 ```bash
