@@ -12,7 +12,7 @@ Importancia del enfoque proactivo en la detección de amenazas.
 
 Panorama actual de amenazas y casos recientes.
 
-[🔹 Módulo 2](https://github.com/Karovil/Threat_Hunting/tree/M%C3%B3dulo-2-Fundamentos-y-Conceptos-Clave-de-Ciberseguridad-Terminolog%C3%ADa-esencial-adversarios%2C-TTPs%2C-IOCs%2C-entre-otros): Fundamentos y Conceptos Clave de Ciberseguridad
+🔹 [Módulo 2](https://github.com/Karovil/Threat_Hunting/tree/M%C3%B3dulo-2-Fundamentos-y-Conceptos-Clave-de-Ciberseguridad-Terminolog%C3%ADa-esencial-adversarios%2C-TTPs%2C-IOCs%2C-entre-otros): Fundamentos y Conceptos Clave de Ciberseguridad
 Terminología esencial: TTPs, IOCs, entre otros.
 
   Arquitecturas de redes, protocolos y seguridad de sistemas.
