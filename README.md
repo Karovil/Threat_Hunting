@@ -19,7 +19,7 @@ Estos hunters deben hacer hipótesis para así hallar un propósito al ataque y 
 ### ⚔️Tácticas y Técnicas
 
 
-- [Fundamentos](#⚔-Tácticas-y-Técnicas)
-- [Herramientas](#herramientas)
+- [Fundamentos](#Tácticas-y-Técnicas)
+- [Herramientas](#Terminología-esencial)
 - [Ejemplos](#ejemplos)
 - [Conclusión](#conclusión)
