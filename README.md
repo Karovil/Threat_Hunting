@@ -37,7 +37,7 @@ Análisis de incidentes reales documentados.
 
 Laboratorios y ejercicios prácticos de threat hunting.
 
-🔹 Módulo 7: Integración con la Respuesta a Incidentes y Mejora Continua
+🔹 [Módulo 7](https://github.com/Karovil/Threat_Hunting/tree/M%C3%B3dulo-7-Integraci%C3%B3n-con-la-Respuesta-a-Incidentes-y-Mejora-Continua-Coordinaci%C3%B3n-con-equipos-de-respuesta-a-incidentes): Integración con la Respuesta a Incidentes y Mejora Continua
 Coordinación con equipos de respuesta a incidentes.
 
 Coordinación con equipos de respuesta a incidentes.
