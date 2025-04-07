@@ -3,8 +3,8 @@
 ## 📄 Tabla de Contenidos
 <!-- TOC -->
 - [Introducción](#introducción)
-  - [¿Qué es?](#qué-es)
-  - [Cómo funciona](#cómo-funciona)
+  - [¿Qué es?](#-qué-es)
+  - [Cómo funciona](#-cómo-funciona)
 - [⚔️ Tácticas y Técnicas](#️tácticas-y-técnicas)
 
 <!-- /TOC -->
