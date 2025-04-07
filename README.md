@@ -13,7 +13,7 @@
   - [Privilege Escalation](#privilege-escalation)
   - [Lateral Movement](#lateral-movement)
     
-- [🧩 Indicadores y Artefactos](#-indicadores-y-artefactos)
+- [🔐 Indicadores y Artefactos](#-indicadores-y-artefactos)
   - [IOC](#-indicadores-y-artefactos)
   - [IOA](#-indicadores-y-artefactos)
   - [Hash](#-indicadores-y-artefactos)
@@ -26,7 +26,7 @@
   - [Sysmon](#-herramientas-y-frameworks)
   - [Velociraptor](#-herramientas-y-frameworks)
     
-- [📈 Análisis y Detección](#-análisis-y-detección)
+- [🧱 Análisis y Detección](#-análisis-y-detección)
   - [Event Correlation](#-análisis-y-detección)
   - [False Positive](#-análisis-y-detección)
   - [Noise vs Signal](#-análisis-y-detección)
@@ -34,27 +34,27 @@
 
 
 - [🌐 Principios de Redes y Sistemas](#-principios-de-redes-y-sistemas)
-- [🧠 Fundamentos de Redes](#-fundamentos-de-redes)
+- [📡 Fundamentos de Redes](#-fundamentos-de-redes)
   - [Modelos de Referencia](#-fundamentos-de-redes)
   - [Protocolos Clave](#-fundamentos-de-redes)
   - [Topologías y Dispositivos](#-fundamentos-de-redes)
     
 - [🧩 Fundamentos de Sistemas](#-fundamentos-de-sistemas)
-  -[Sistemas Operativos](#-fundamentos-de-sistemas)
-  -[Gestión de Usuarios y Permisos](#-fundamentos-de-sistemas)
-  -[Procesos, Servicios y Registro](#-fundamentos-de-sistemas)
-  -[Hardening y Supervisión](#-fundamentos-de-sistemas)
+  - [Sistemas Operativos](#-fundamentos-de-sistemas)
+  - [Gestión de Usuarios y Permisos](#-fundamentos-de-sistemas)
+  - [Procesos, Servicios y Registro](#-fundamentos-de-sistemas)
+  - [Hardening y Supervisión](#-fundamentos-de-sistemas)
   
-- [🧠 Conocimientos Básicos en Arquitectura de Redes, Protocolos y Seguridad de Sistemas](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
-  -[🏗️ Arquitectura de Redes](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
-  -[🧱 Elementos clave](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
-  -[Diseño seguro](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
-  -[📡 Protocolos de Comunicación](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
-  -[Protocolos comunes](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
-  -[🔐 Seguridad de Sistemas](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
-  -[Conceptos fundamentales](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+- [🏗️ Conocimientos Básicos en Arquitectura de Redes, Protocolos y Seguridad de Sistemas](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  - [Arquitectura de Redes](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  - [Elementos clave](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  - [Diseño seguro](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  - [Protocolos de Comunicación](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  - [Protocolos comunes](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  - [Seguridad de Sistemas](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  - [Conceptos fundamentales](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
     
-    - [🧩 Relación con Threat Hunting](#-Relación-con-Threat-Hunting)
+- [🧠 Relación con Threat Hunting](#-Relación-con-Threat-Hunting)
 <!-- /TOC -->
 ---
 
