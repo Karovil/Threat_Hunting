@@ -1,127 +1,63 @@
-# 🧠 Punto 2: Flujo de Integración Operativa — Threat Hunting + Respuesta a Incidentes
+# 🧠 Punto 2: Flujo de Integración Operativa: Threat Hunting + IR
 
-Este flujo muestra cómo debería funcionar una organización moderna en términos de detección, análisis y respuesta frente a amenazas. No son procesos separados, sino que se interconectan en tiempo real, permitiendo actuar de forma rápida, precisa y colaborativa.
-
----
-
-## 🧩 Etapas del Flujo y Roles
-
-| Etapa | Actividad de **Threat Hunting** | Actividad de **IR (Incident Response)** |
-|-------|----------------------------------|------------------------------------------|
-| 1. Recolección | Recoge datos históricos y en tiempo real de logs, SIEM, EDR, endpoints. | Monitorea alertas en herramientas automáticas y valida eventos críticos. |
-| 2. Hipótesis | Formula hipótesis basadas en TTPs e IOCs usando inteligencia de amenazas. | Puede revisar eventos pasados o relacionados a la hipótesis planteada. |
-| 3. Detección | Encuentra actividad sospechosa no detectada por sistemas automáticos. | Confirma si la actividad constituye un incidente de seguridad. |
-| 4. Comunicación | Envía informe técnico con contexto, evidencia y recomendaciones. | Activa el playbook adecuado para iniciar la respuesta estructurada. |
-| 5. Coordinación | Apoya técnicamente al equipo IR, da seguimiento técnico al ataque. | Ejecuta acciones de contención, erradicación y recuperación. |
-| 6. Documentación | Registra hallazgos, rutas de ataque y patrones útiles para el futuro. | Documenta el incidente, la línea de tiempo, impacto y acciones tomadas. |
-| 7. Mejora Continua | Ajusta hipótesis, queries e integra nuevos IOCs al hunting. | Mejora políticas, reglas del SIEM/EDR y actualiza procedimientos. |
-
+Una organización moderna y resiliente debe establecer un **flujo operativo coordinado** entre el equipo de **Threat Hunting** y el de **Respuesta a Incidentes (IR)**. Este flujo garantiza que las amenazas se descubran de forma proactiva y se contengan de manera eficaz, generando además un proceso de mejora continua.
 
 ---
 
-### 🔍 1. Recolección
+## 🧩 ¿Por qué es importante este flujo?
 
-- **Threat Hunting**:
-  - Recoge información desde múltiples fuentes: logs de red, endpoints, sistemas de autenticación, SIEM, EDR, etc.
-  - Analiza datos históricos y en tiempo real buscando patrones inusuales.
+- El Threat Hunting genera hipótesis basadas en inteligencia y experiencia para detectar comportamientos anómalos.
+- La IR valida, analiza y responde cuando esas amenazas se confirman.
+- Ambos equipos deben tener procesos y herramientas que **se comuniquen, compartan datos y se retroalimenten**.
 
-- **IR**:
-  - Monitorea alertas generadas por las herramientas de seguridad.
-  - Comienza validación si se detecta una alerta crítica.
-
-🔧 *Ejemplo*: El hunter analiza logs DNS buscando dominios maliciosos; IR revisa alertas por inicios de sesión anómalos.
+Esto no solo reduce el tiempo de detección y respuesta, sino que mejora la eficiencia de todo el ecosistema de ciberseguridad.
 
 ---
 
-### 🧠 2. Hipótesis
+## 🔄 Flujo de integración por etapas
 
-- **Threat Hunting**:
-  - Formula hipótesis basadas en TTPs o IOCs.
-  - Se basa en inteligencia de amenazas o tendencias conocidas.
+A continuación, se muestra cómo se integran ambas disciplinas en un proceso conjunto y cíclico:
 
-- **IR**:
-  - Puede investigar eventos relacionados mientras espera confirmación del hunter.
-
-🔧 *Ejemplo*: Hunter sospecha de un ataque Golden Ticket por comportamiento anómalo en Kerberos.
-
----
-
-### 🚨 3. Detección
-
-- **Threat Hunting**:
-  - Encuentra actividad sospechosa que no ha sido alertada automáticamente.
-  - Presenta evidencia suficiente para escalar.
-
-- **IR**:
-  - Valida si se trata de un incidente real.
-  - Inicia análisis forense si es necesario.
-
-🔧 *Ejemplo*: Hunter detecta conexión a una IP de comando y control; IR confirma el incidente.
+| Etapa | Actividad de Threat Hunting | Actividad de IR |
+|-------|------------------------------|------------------|
+| **1. Recolección** | Analiza registros históricos, telemetría de endpoints, tráfico de red y datos del SIEM. | Monitorea alertas generadas por herramientas de seguridad (SIEM, EDR, IDS). |
+| **2. Hipótesis** | Crea hipótesis basadas en TTPs (MITRE ATT&CK), IOCs, o inteligencia de amenazas. | Está a la espera de eventos críticos o realiza investigación sobre amenazas detectadas. |
+| **3. Detección** | Identifica comportamientos sospechosos o fuera de lo común (por ejemplo, beaconing, uso de herramientas de administración remota). | Revisa si existe una amenaza activa y clasifica el evento como incidente confirmado. |
+| **4. Comunicación** | Documenta y comunica los hallazgos al equipo IR: logs, contexto, hosts implicados, rutas de ataque, etc. | Activa los playbooks de respuesta para contención, análisis forense y mitigación. |
+| **5. Coordinación** | Asiste con análisis técnico, búsqueda de otros indicadores, y revisión de entornos similares. | Ejecuta acciones de contención, erradicación y recuperación. Puede solicitar apoyo adicional. |
+| **6. Documentación** | Registra la hipótesis, los datos analizados, técnicas utilizadas y hallazgos. | Genera el informe del incidente, impacto, tiempos, y aprendizajes clave. |
+| **7. Mejora** | Ajusta reglas de búsqueda, genera nuevos casos de hunting, y alimenta dashboards o SIEM. | Ajusta reglas de firewall, políticas de acceso, y contribuye a la mejora de controles de seguridad. |
 
 ---
 
-### 📢 4. Comunicación
+## 🧠 ¿Qué lo hace un flujo efectivo?
 
-- **Threat Hunting**:
-  - Entrega un informe técnico con evidencia, contexto e impacto.
-  - Comunica al equipo de IR para actuar.
-
-- **IR**:
-  - Activa playbooks específicos según el tipo de amenaza.
-  - Asigna tareas al equipo de respuesta.
-
-🔧 *Ejemplo*: Se informa sobre uso de PowerShell malicioso; IR activa playbook de ejecución remota.
+- **Comunicación constante**: Canales fluidos entre hunting e IR (Slack, ticketing, reuniones).
+- **Herramientas integradas**: SIEMs y SOARs que permiten que las acciones fluyan sin fricción.
+- **Playbooks compartidos**: Procedimientos estandarizados que guían qué hacer ante cada tipo de amenaza.
+- **Cultura colaborativa**: Ambos equipos deben entender sus roles, respetar tiempos y compartir objetivos.
 
 ---
 
-### 🤝 5. Coordinación
+## 🧪 Ejemplo práctico de integración
 
-- **Threat Hunting**:
-  - Apoya en el análisis técnico y búsqueda de otros vectores.
-  - Ayuda a identificar el alcance del ataque.
-
-- **IR**:
-  - Contiene y erradica la amenaza (aislar equipos, cerrar accesos).
-  - Continúa con acciones de respuesta.
-
-🔧 *Ejemplo*: IR aísla máquina infectada; hunter busca si hay más sistemas comprometidos.
+- Un hunter crea una hipótesis basada en el patrón de uso de `rundll32.exe` para ejecutar scripts remotos.
+- Al hacer consultas en el SIEM, detecta múltiples ejecuciones anómalas en equipos de una red administrativa.
+- Comunica el hallazgo al equipo IR con evidencia: hashes, IPs, contexto de usuario y sistema.
+- El equipo IR activa un playbook para investigar posibles infecciones por malware persistente.
+- Se aísla una máquina, se encuentra un payload, y se bloquean los IOCs detectados.
+- Ambas áreas documentan el incidente y generan nuevas reglas para futuras búsquedas similares.
 
 ---
 
-### 📄 6. Documentación
+## ✅ Conclusión
 
-- **Threat Hunting**:
-  - Registra hallazgos, hipótesis, patrones y resultados.
-  - Mejora futuras búsquedas con base en lo aprendido.
+Un flujo operativo claro y bien definido entre **Threat Hunting** e **Incident Response**:
+- Mejora los tiempos de reacción.
+- Permite una cobertura total de amenazas, tanto visibles como ocultas.
+- Fomenta un entorno de seguridad basado en la inteligencia y la acción coordinada.
 
-- **IR**:
-  - Documenta el incidente, acciones tomadas, línea de tiempo e impacto.
-  - Extrae lecciones aprendidas.
+> 🔄 *La caza de amenazas detecta, la respuesta actúa, y juntas mejoran la postura defensiva día a día.*
 
-🔧 *Ejemplo*: Se documenta vulnerabilidad en RDP sin MFA y se marca como hallazgo crítico.
-
----
-
-### 📈 7. Mejora Continua
-
-- **Threat Hunting**:
-  - Refina queries, ajusta hipótesis, agrega nuevos IOCs al SIEM.
-  - Crea nuevos casos de uso para futuras búsquedas.
-
-- **IR**:
-  - Actualiza políticas, reglas de firewall/EDR/SIEM.
-  - Mejora playbooks y procesos de respuesta.
-
-🔧 *Ejemplo*: Tras ataque con `certutil`, se crean reglas para detectar su uso no autorizado.
-
----
-
-## 🧪 Conclusión
-
-Cuando hunting e IR trabajan en sincronía:
-
-- Se detectan amenazas más rápido.
-- Se responde con mayor precisión.
-- Se aprende y mejora constantemente.
 
 
