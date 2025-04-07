@@ -1,10 +1,10 @@
 # Integración con la Respuesta a Incidentes y Mejora Continua
 
-🎯 Propósito del Módulo
+## 🎯 Propósito del Módulo
 
 Este módulo tiene como finalidad demostrar cómo la práctica del Threat Hunting no es un proceso aislado, sino una función clave que debe integrarse de manera profunda y efectiva con los equipos y procedimientos de respuesta a incidentes. Además, se explica cómo dicha integración genera un ciclo de mejora continua en la postura de ciberseguridad de la organización.
 
-🔰Introduccion
+## 🔰Introduccion
 
 En un entorno digital cada vez más complejo y amenazado, la ciberseguridad ya no puede limitarse a reaccionar cuando ocurre un ataque. El Threat Hunting, o caza de amenazas, es una práctica clave que busca identificar de forma proactiva amenazas avanzadas que han evadido los sistemas tradicionales de detección. Sin embargo, su verdadero valor se alcanza cuando se integra eficazmente con los procesos de Respuesta a Incidentes (IR).
 
