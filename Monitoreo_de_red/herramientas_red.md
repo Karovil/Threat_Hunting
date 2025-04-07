@@ -25,7 +25,7 @@ Wireshark es una herramienta de análisis de protocolos de red que permite captu
 
 - **Ejemplo visual**:
 
-  ![Wireshark Screenshot](https://upload.wikimedia.org/wikipedia/commons/e/e7/Wireshark_1.99.8_screenshot.png)
+  ![Wireshark Screenshot](https://www.wireshark.org/docs/wsug_html/images/ws-main.png)
 
 ---
 
