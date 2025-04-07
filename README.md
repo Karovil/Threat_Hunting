@@ -16,7 +16,7 @@ En este módulo se analiza cómo funciona esta coordinación, qué herramientas 
 
 ---
 
-**Tabla de Contenido**
+[**Tabla de Contenido**]()
 
 
 - [🔐 1. ¿Qué es la Respuesta a Incidentes y por qué se vincula con el Threat Hunting?](#1-qué-es-la-respuesta-a-incidentes-y-cómo-se-relaciona-con-el-threat-hunting)
