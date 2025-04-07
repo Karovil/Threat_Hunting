@@ -73,7 +73,7 @@ tee -a /etc/apt/sources.list.d/wazuh.list
 apt-get update
 ```
 
-🧩 Paso 2: Instalar el agente de Wazuh
+### 🧩 Paso 2: Instalar el agente de Wazuh
 
  Reemplaza <IP_DEL_MANAGER> con la IP de tu servidor Wazuh
 ```bash
@@ -88,7 +88,7 @@ WAZUH_REGISTRATION_PASSWORD="clave"
 ```
 
 
-▶️ Paso 3: Habilitar e iniciar el servicio del agente
+### ▶️ Paso 3: Habilitar e iniciar el servicio del agente
 ```bash
 systemctl daemon-reload
 systemctl enable wazuh-agent
