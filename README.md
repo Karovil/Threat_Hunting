@@ -6,11 +6,11 @@
   - [¿Qué es?](#Qué-es)
   - [Cómo funciona](#Cómo-funciona)
 - [⚔️ Tácticas y Técnicas](#️tácticas-y-técnicas)
-- [TTPs (Tactics, Techniques, and Procedures)](#ttps-tactics-techniques-and-procedures)
-- [Living off the Land (LotL)](#living-off-the-land-lotl)
-- [Initial Access](#initial-access)
-- [Privilege Escalation](#privilege-escalation)
-- [Lateral Movement](#lateral-movement)
+  - [TTPs (Tactics, Techniques, and Procedures)](#ttps-tactics-techniques-and-procedures)
+  - [Living off the Land (LotL)](#living-off-the-land-lotl)
+  - [Initial Access](#initial-access)
+  - [Privilege Escalation](#privilege-escalation)
+  - [Lateral Movement](#lateral-movement)
 - [🧩 Indicadores y Artefactos](#-indicadores-y-artefactos)
 - [📦 Herramientas y Frameworks](#-herramientas-y-frameworks)
 - [📈 Análisis y Detección](#-análisis-y-detección)
@@ -54,11 +54,9 @@ Uso de herramientas legítimas del sistema operativo (como PowerShell, WMIC, RDP
 Primera forma en la que un atacante ingresa a un sistema o red: phishing, explotación de vulnerabilidad, uso de credenciales filtradas.
 
 ## Privilege Escalation
-
 Técnicas utilizadas por el atacante para obtener mayores permisos, como pasar de usuario estándar a administrador/root.
 
 ## Lateral Movement
-
 Desplazamiento entre sistemas dentro de una red una vez comprometido un punto inicial, para expandir control o acceder a activos más valiosos.
 
 ## 🧩 Indicadores y Artefactos
