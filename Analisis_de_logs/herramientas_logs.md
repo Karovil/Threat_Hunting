@@ -25,14 +25,87 @@ Supón que detectas tráfico constante hacia una IP desconocida en un horario in
 - Inspeccionar si hay exfiltración de información o un canal de C2 (Command and Control).
 
 **Visual:**  
+``` bash
 tcp.port == 443 and ip.dst == 192.168.1.50
-
-yaml
-Copiar
-Editar
+```
 Este filtro muestra el tráfico HTTPS hacia un servidor específico.
 
 ---
+
+## 🔧 Comandos Útiles para Análisis de Logs en Linux
+
+Los entornos Linux suelen generar muchos registros ubicados en `/var/log/`. Analizar estos archivos directamente desde consola con comandos eficientes es una habilidad clave para el Blue Team y los Threat Hunters.
+
+A continuación, te muestro comandos prácticos y filtros comunes para revisar logs:
+
+---
+
+### 📄 1. Ver los últimos registros de un archivo
+``` bash
+tail -n 100 /var/log/auth.log
+```
+Muestra las últimas 100 líneas del archivo auth.log, donde se registran eventos de autenticación.
+
+🔍 2. Buscar intentos fallidos de login
+``` bash
+grep "Failed password" /var/log/auth.log
+```
+Filtra los intentos fallidos de autenticación. Muy útil para detectar ataques de fuerza bruta.
+
+🧑‍💻 3. Buscar accesos de un usuario específico
+``` bash
+grep "carolina" /var/log/auth.log
+``` 
+Muestra todos los eventos relacionados con el usuario carolina.
+
+🌍 4. Ver conexiones SSH entrantes
+``` bash
+grep "Accepted" /var/log/auth.log | grep "ssh"
+``` 
+Filtra los logins exitosos vía SSH.
+
+📅 5. Filtrar por fecha y hora
+``` bash
+awk '$0 ~ /Apr 06 10:/' /var/log/auth.log
+``` 
+Muestra todos los eventos registrados a las 10:00 AM del 6 de abril.
+
+🕵️‍♀️ 6. Buscar intentos de acceso desde una IP específica
+``` bash
+grep "192.168.1.20" /var/log/auth.log
+``` 
+Permite saber si una IP ha interactuado con el sistema.
+
+🔁 7. Analizar logs con más contexto
+``` bash
+grep -C 3 "Failed password" /var/log/auth.log
+``` 
+Incluye 3 líneas antes y después del evento, dando más contexto sobre lo ocurrido.
+
+📦 8. Contar la cantidad de intentos fallidos
+``` bash
+grep "Failed password" /var/log/auth.log | wc -l
+```
+Devuelve el número total de intentos fallidos registrados.
+
+🧮 9. Listar IPs con más intentos fallidos
+``` bash
+grep "Failed password" /var/log/auth.log | awk '{print $(NF-3)}' | sort | uniq -c | sort -nr | head
+``` 
+Este comando muestra las IPs que más veces intentaron ingresar de forma incorrecta. Ideal para identificar fuentes de ataque.
+
+🪓 10. Extraer solo la IP de eventos de login fallido
+``` bash
+grep "Failed password" /var/log/auth.log | awk '{print $(NF-3)}'
+``` 
+Extrae únicamente la IP que aparece al final de los logs de intentos fallidos.
+
+✅ Tips para aplicar estos comandos
+Los logs suelen estar comprimidos (.gz): usa zgrep en lugar de grep para buscarlos sin descomprimir.
+
+Puedes combinar comandos con | (pipes) para obtener resultados más específicos.
+
+Automatiza tareas con scripts en bash o integraciones con cron para revisiones periódicas.
 
 ### 2. **Miner (dentro de HELK, Open Threat Hunter, etc.)**
 
