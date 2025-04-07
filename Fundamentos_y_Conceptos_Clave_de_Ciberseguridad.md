@@ -75,13 +75,13 @@ Estos hunters deben hacer hipótesis para así hallar un propósito al ataque y 
 
 
 ## ⚔️Tácticas y Técnicas
-### TTPs (Tactics, Techniques, and Procedures)
+- ### TTPs (Tactics, Techniques, and Procedures)
 
 Patrón de comportamiento del adversario y/o descripción de cómo actúa un adversario en un ataque.
 
-- **Tactics**: Objetivos de alto nivel (exfiltración de datos).
-- **Techniques**: Métodos usados para lograr esos objetivos (keylogging).
-- **Procedures**: Implementación específica del atacante (uso de PowerShell con scripts personalizados para una organización como tal).
+  - **Tactics**: Objetivos de alto nivel (exfiltración de datos).
+  - **Techniques**: Métodos usados para lograr esos objetivos (keylogging).
+  - **Procedures**: Implementación específica del atacante (uso de PowerShell con scripts personalizados para una organización como tal).
 
 ### Living off the Land (LotL)
 Uso de herramientas legítimas del sistema operativo (como PowerShell, WMIC, RDP) para llevar a cabo actividades maliciosas sin levantar sospechas ni hacer uso de malware externos.
