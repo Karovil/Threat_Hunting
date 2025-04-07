@@ -20,7 +20,7 @@ En este módulo se analiza cómo funciona esta coordinación, qué herramientas 
 
 
 - [🔐 1. ¿Qué es la Respuesta a Incidentes y por qué se vincula con el Threat Hunting?](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-7-Integraci%C3%B3n-con-la-Respuesta-a-Incidentes-y-Mejora-Continua-Coordinaci%C3%B3n-con-equipos-de-respuesta-a-incidentes/Tabla%20de%20Contenido/%F0%9F%94%90Respuesta%20a%20Incidentes.md)
-- [🧠 2. Flujo de Integración Operativa: Threat Hunting + IR](#2-flujo-de-integración-operativa)
+- [🧠 2. Flujo de Integración Operativa: Threat Hunting + IR](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-7-Integraci%C3%B3n-con-la-Respuesta-a-Incidentes-y-Mejora-Continua-Coordinaci%C3%B3n-con-equipos-de-respuesta-a-incidentes/Tabla%20de%20Contenido/Flujo%20de%20Integraci%C3%B3n%20Operativa.md)
 - [🛠️ 3. Herramientas que facilitan la integración](#3-herramientas-que-facilitan-la-integración)
 - [🧪 4. Ejemplo Real de Integración Exitosa](#4-caso-real-solarwinds-2020)
 - [📈 5. Mejora Continua: Clave para una Seguridad Evolutiva](#5-mejora-continua)
