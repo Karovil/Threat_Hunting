@@ -18,6 +18,7 @@
   - [🧠 Fundamentos de Redes](#-fundamentos-de-redes)
   - [🧩 Fundamentos de Sistemas](#-fundamentos-de-sistemas)
   - [🧠 Conocimientos Básicos en Arquitectura de Redes, Protocolos y Seguridad de Sistemas](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  - [🧩 Relación con Threat Hunting](#Relación-con-Threat-Hunting)
 <!-- /TOC -->
 ---
 
