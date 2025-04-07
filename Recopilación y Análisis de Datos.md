@@ -8,6 +8,8 @@ Para responder a eso, necesitamos datos. Pero no cualquier tipo de datos, sino a
 ¿Qué datos necesitamos y de dónde los sacamos?
 En una red moderna, los datos de seguridad pueden venir de múltiples capas. Necesitamos recolectar desde registros del sistema (como logs de Windows o Syslog de Linux), hasta eventos de red, autenticaciones, uso de aplicaciones y señales de los endpoints.
 
+#
+
 🧠 Ejemplo real:
 Un atacante logra acceso inicial por RDP y empieza a moverse lateralmente. Si solo recolectas logs del firewall, te perderás toda la actividad interna. Pero si recolectas eventos de autenticación fallida (EventID 4625), logs del EDR y tráfico lateral (SMB, WinRM), la historia cambia completamente.
 
@@ -21,6 +23,8 @@ Se usan herramientas como:
 - Elastic Common Schema (ECS), para darles una estructura común.
 
 - Graylog pipelines o Cribl, para enriquecer eventos antes de analizarlos.
+
+#
 
 💡 Dato curioso: ECS no solo define los campos (source.ip, event.outcome, etc.), sino que su estructura permite consultas cruzadas sobre fuentes distintas, como correlacionar logs de proxy con actividad en endpoints.
 
@@ -49,7 +53,7 @@ Graylog: Potente analizador de logs con filtros y consultas personalizadas. Úti
 
 Elastic Stack: Elasticsearch permite búsquedas a gran escala; Logstash transforma; Kibana visualiza. Su combinación permite detectar tendencias y visualizar relaciones entre eventos.
 
-Splunk: Robusto y escalable. Permite búsquedas como:
+- Splunk: Robusto y escalable. Permite búsquedas como:
 
 spl
 Copiar
@@ -57,20 +61,22 @@ Editar
 index=windows EventCode=4672 user!="Administrador"
 Eso detectaría privilegios especiales asignados a usuarios inesperados.
 
-MITRE ATT&CK + Sigma: Uno da el mapa de cómo atacan los adversarios (tácticas, técnicas, procedimientos); el otro te permite traducir esas técnicas en reglas detectables en tu entorno.
+- MITRE ATT&CK + Sigma: Uno da el mapa de cómo atacan los adversarios (tácticas, técnicas, procedimientos); el otro te permite traducir esas técnicas en reglas detectables en tu entorno.
 
 Ejercicio sugerido
 Objetivo: Detectar un posible movimiento lateral basado en autenticaciones sospechosas.
 
 Pasos:
 
-Filtra todos los logs con EventID 4624 (logins exitosos).
+1. Filtra todos los logs con EventID 4624 (logins exitosos).
 
-Busca usuarios que normalmente acceden desde ciertos hosts, conectándose desde otros nuevos.
+2. Busca usuarios que normalmente acceden desde ciertos hosts, conectándose desde otros nuevos.
 
-Cruza la información con eventos de cmd.exe ejecutado tras el login.
+3. Cruza la información con eventos de cmd.exe ejecutado tras el login.
 
 Pregunta clave: ¿Hay alguna coincidencia entre autenticaciones inusuales y ejecución de comandos administrativos?
+
+#
 
 Cierre
 El hunting no es una herramienta, ni una tecnología: es una mentalidad.
