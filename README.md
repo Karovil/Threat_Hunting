@@ -13,3 +13,6 @@ Esta integración permite que los hallazgos de los cazadores de amenazas sean ap
 En este módulo se analiza cómo funciona esta coordinación, qué herramientas y procesos la hacen posible, y cómo puede ser aplicada en instituciones como el SENA para fortalecer su postura de seguridad digital de manera sostenible y estratégica.
 
 **Tabla de Contenido**
+[TOCM]
+
+[TOC]
