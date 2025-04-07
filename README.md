@@ -20,12 +20,12 @@ En este módulo se analiza cómo funciona esta coordinación, qué herramientas 
 
 
 - [🔐 1. ¿Qué es la Respuesta a Incidentes y por qué se vincula con el Threat Hunting?](#1-qué-es-la-respuesta-a-incidentes-y-cómo-se-relaciona-con-el-threat-hunting)
-- [2. Flujo de Integración Operativa](#2-flujo-de-integración-operativa)
-- [3. Herramientas que facilitan la integración](#3-herramientas-que-facilitan-la-integración)
-- [4. Caso Real: SolarWinds 2020](#4-caso-real-solarwinds-2020)
-- [5. Mejora Continua](#5-mejora-continua)
-- [6. Buenas Prácticas](#6-buenas-prácticas)
-- [7. Impacto para el SENA](#7-impacto-para-el-sena)
+- [🧠 2. Flujo de Integración Operativa: Threat Hunting + IR](#2-flujo-de-integración-operativa)
+- [🛠️ 3. Herramientas que facilitan la integración](#3-herramientas-que-facilitan-la-integración)
+- [🧪 4. Ejemplo Real de Integración Exitosa](#4-caso-real-solarwinds-2020)
+- [📈 5. Mejora Continua: Clave para una Seguridad Evolutiva](#5-mejora-continua)
+- [📚 6. Buenas Prácticas para una Integración Efectiva](#6-buenas-prácticas)
+- [🧩 7. Beneficios de esta integración para una institución como el SENA](#7-impacto-para-el-sena)
 - [✅ Conclusión](#-conclusión)
 
 ---
