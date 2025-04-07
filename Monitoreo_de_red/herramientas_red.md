@@ -95,20 +95,33 @@ Opcionalmente, puedes usar:
  ```bash
 netstat -ano | grep :80
  ```
-### 🔍 Filtros y Comandos Útiles en Linux para Análisis de Red
-Comando	Descripción
+## 🔍 Filtros y Comandos Útiles en Linux para Análisis de Red
 
-  -netstat -tulnp	Muestra puertos abiertos y servicios asociados.
-  
-  -lsof -i	Lista procesos que usan la red.
-  
-  -ss -tulwn	Alternativa moderna a netstat.
-  
-  -arp -a	Muestra la tabla ARP de la red local.
-  
-  -ping, traceroute	Diagnóstico básico de conectividad.
-  
-  -whois, dig, nslookup	Recolección de información sobre dominios e IPs.
+En entornos Linux, contar con comandos eficientes para inspeccionar la red es clave durante tareas de análisis, troubleshooting o threat hunting.  
+A continuación, se presentan algunos comandos esenciales con su respectiva descripción:
+
+---
+
+| 🧩 Comando                | 💬 Descripción                                                                 |
+|---------------------------|------------------------------------------------------------------------------|
+| `netstat -tulnp`          | Muestra los **puertos abiertos** y los servicios que los utilizan.           |
+| `lsof -i`                 | Lista los **procesos que están usando la red** actualmente.                  |
+| `ss -tulwn`               | Alternativa moderna a `netstat`, más rápida y detallada.                     |
+| `arp -a`                  | Muestra la **tabla ARP** de la red local (IPs y MACs conocidas).             |
+| `ping`, `traceroute`     | Comandos clásicos para diagnóstico de **conectividad de red**.               |
+| `whois`, `dig`, `nslookup`| Permiten **consultar información de dominios e IPs** (DNS, geolocalización, etc). |
+
+---
+
+### ✅ Sugerencias de uso
+
+- Ejecuta estos comandos como `sudo` para obtener mayor visibilidad.
+- Úsalos junto a herramientas como Wireshark o tcpdump para **correlación de datos**.
+- Incluye estos comandos en scripts para automatizar análisis iniciales en incidentes.
+
+---
+
+
   
 ## 🧠 Casos de Uso y Aplicación en Threat Hunting
 ### Caso 1: Exfiltración de Datos
