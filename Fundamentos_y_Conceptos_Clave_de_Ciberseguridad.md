@@ -75,7 +75,7 @@ Estos hunters deben hacer hipótesis para así hallar un propósito al ataque y 
 
 
 ## ⚔️Tácticas y Técnicas
-- ### TTPs (Tactics, Techniques, and Procedures)
+### TTPs (Tactics, Techniques, and Procedures)
 
 Patrón de comportamiento del adversario y/o descripción de cómo actúa un adversario en un ataque.
 
