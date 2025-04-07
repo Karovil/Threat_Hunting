@@ -104,6 +104,7 @@ rule Malware_By_Hash {
 }
 ```
 
+
 - **Sysmon**: Herramienta de Microsoft para registrar eventos detallados del sistema.
 - **Velociraptor**: Plataforma para respuesta forense y threat hunting en endpoints.
 
