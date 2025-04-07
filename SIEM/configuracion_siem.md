@@ -160,86 +160,101 @@ Accede al dashboard de Kibana desde tu navegador:
 http://localhost:5601
 ```
 Asegúrate de que los servicios de Wazuh y Kibana estén activos.
+# 💲 SIEM Comercial: Splunk Enterprise Security (ES)
 
-💲 SIEM Comercial: Splunk Enterprise Security
-🔍 ¿Qué es Splunk ES?
+---
+
+## 🔍 ¿Qué es Splunk ES?
+
 Splunk ES es una solución comercial avanzada para:
 
-Correlación de eventos.
+- ✅ Correlación de eventos
+- ✅ Recolección de datos desde cualquier fuente
+- ✅ Detección con machine learning
+- ✅ Integración con SOAR (automatización de respuesta)
 
-Recolección de datos desde cualquier fuente.
+---
 
-Detección con machine learning.
+## 🧱 Componentes principales
 
-Integración con SOAR (automatización de respuesta).
+- **Splunk Core**: Recolecta, indexa y permite búsquedas en los datos.
+- **Forwarders**: Envían logs desde los endpoints al servidor Splunk.
+- **App ES**: Módulo específico de seguridad (SIEM) sobre la plataforma Splunk.
+- **Dashboards y reportes personalizados**: Interfaces visuales interactivas para análisis.
 
-🧱 Componentes principales
-Splunk Core: Recolecta, indexa y busca datos.
+---
 
-Forwarders: Envían logs desde los endpoints.
+## ⚙️ Pasos para la configuración
 
-App ES: Módulo de seguridad (SIEM) sobre Splunk.
+### 📥 Instalación del core Splunk
 
-Dashboards y reportes personalizados.
+Descargar desde el sitio oficial:  
+➡️ [https://www.splunk.com/en_us/download](https://www.splunk.com/en_us/download)
 
-⚙️ Pasos para la configuración
-📥 Instalación del core Splunk
-Descargar desde: https://www.splunk.com/en_us/download
+En sistemas Linux:
 
-En Linux:
-
-bash
-Copiar
-Editar
+```bash
 dpkg -i splunk_package.deb
 /opt/splunk/bin/splunk start --accept-license
-🔐 Acceso web
-URL: http://localhost:8000
+```
+### 🔐 Acceso web
 
-Usuario por defecto: admin
+- **URL**: [http://localhost:8000](http://localhost:8000)
+- **Usuario por defecto**: `admin`
 
-🔗 Conexión de datos
-Navega a: Settings → Data Inputs
+---
 
-Puedes ingresar:
+### 🔗 Conexión de datos
+Navegar a:
 
-Syslog
+Settings → Data Inputs
 
-Logs de Windows
+Fuentes compatibles:
 
-Logs de nube (AWS, Azure, GCP)
+-Syslog
 
-APIs como VirusTotal
+-Logs de Windows
 
-📦 Instalar la App Enterprise Security
-Desde: https://splunkbase.splunk.com/app/263/
+-Logs de servicios en la nube (AWS, Azure, GCP)
 
-⚠️ Reglas de correlación
-Usan SPL (Splunk Processing Language).
+-APIs externas como VirusTotal
 
-Ejemplos:
+### 📦 Instalación de la App Enterprise Security
 
-Inicios de sesión anómalos.
+Descargar desde Splunkbase:  
+➡️ [https://splunkbase.splunk.com/app/263/](https://splunkbase.splunk.com/app/263/)
 
-Escaneos internos.
+### ⚠️ Reglas de correlación
 
-Beaconing a C2.
+Splunk utiliza **SPL (Splunk Processing Language)** para crear reglas de detección personalizadas.
 
-🆚 Comparativa rápida
-Característica	🆓 Wazuh	💲 Splunk Enterprise Security
-Licencia	Gratuito	Comercial
-Visualización	Kibana (ELK)	Dashboards avanzados
-Reglas de correlación	XML / JSON	SPL (lenguaje propio)
-Integración con MITRE	✅	✅
-Automatización (SOAR)	Limitada	Avanzada (Splunk SOAR / Phantom)
-Facilidad de uso	Media	Alta (GUI muy amigable)
-Escalabilidad	Alta	Muy alta
-Ideal para	PYMEs, educación, labs	Empresas, banca, industria, gobierno
-🎯 Conclusión
-Wazuh es excelente para entornos con recursos limitados o laboratorios de aprendizaje.
+**Ejemplos comunes:**
 
-Splunk ofrece potencia, automatización y análisis de amenazas a gran escala.
+- Detección de inicios de sesión anómalos
+- Escaneos de red internos
+- Tráfico sospechoso de beaconing hacia servidores C2 (Command & Control)
 
-Ambos pueden ser puntos de partida sólidos para estrategias de detección y respuesta.
+---
 
+### 🆚 Comparativa rápida
 
+| Característica                 | 🆓 **Wazuh**              | 💲 **Splunk Enterprise Security**  |
+|-------------------------------|---------------------------|-------------------------------------|
+| **Licencia**                  | Gratuito                  | Comercial                           |
+| **Visualización**             | Kibana (ELK)              | Dashboards avanzados                |
+| **Reglas de correlación**     | XML / JSON                | SPL (lenguaje propio)               |
+| **Integración con MITRE**     | ✅                         | ✅                                  |
+| **Automatización (SOAR)**     | Limitada                  | Avanzada (Splunk SOAR / Phantom)    |
+| **Facilidad de uso**          | Media                     | Alta (GUI muy amigable)             |
+| **Escalabilidad**             | Alta                      | Muy alta                            |
+| **Ideal para**                | PYMEs, educación, labs    | Empresas, banca, industria, gobierno|
+
+---
+
+### 🎯 Conclusión
+
+- **Wazuh** es una solución robusta y gratuita, ideal para entornos con recursos limitados, laboratorios, PYMEs o instituciones educativas.
+- **Splunk ES** es una plataforma comercial poderosa, ideal para organizaciones grandes que requieren detección avanzada, automatización y análisis profundo de amenazas.
+- Hay que tener en cuenta que Slunk tambien cuenta con una prueba gratuita por 60 dias.
+
+Ambos pueden ser puntos de partida sólidos dentro de una **estrategia de ciberseguridad basada en SIEM**.
