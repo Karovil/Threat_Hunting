@@ -203,7 +203,7 @@ Conocer redes y sistemas es clave para threat hunting: ayuda a detectar configur
 
 ## 🧩 Relación con Threat Hunting
 
-Un hunter debe:
+El deber de un hunter es:
 
 - Reconocer configuraciones débiles.
 - Analizar tráfico y protocolos.
