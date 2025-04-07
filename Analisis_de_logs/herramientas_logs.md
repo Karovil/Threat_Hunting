@@ -118,7 +118,79 @@ Editar
 - **Detección de beaconing**: comunicaciones repetitivas a intervalos constantes, común en malware que intenta comunicarse con un servidor de C2.
 
 ---
+## 🔎 Sysmon + Winlogbeat
 
+### ¿Qué es Sysmon?
+
+**Sysmon (System Monitor)** es una herramienta de Microsoft Sysinternals que genera logs detallados sobre:
+
+- Creación de procesos.
+- Cambios en el registro.
+- Conexiones de red.
+- Cargas de DLL.
+- Manipulación de memoria.
+
+### ¿Qué es Winlogbeat?
+
+**Winlogbeat** es un agente ligero que envía logs de eventos de Windows (incluidos los de Sysmon) a una plataforma como ELK o Wazuh.
+
+### Ejemplo:
+
+- Sysmon detecta que el proceso `notepad.exe` está lanzando `powershell.exe` con una cadena codificada en base64.
+- Winlogbeat envía esta información al SIEM → se genera una alerta → se investiga el proceso.
+
+---
+
+## ⛏️ LogMiner
+
+**LogMiner** es una utilidad de Oracle Database que permite examinar los archivos de redo log y archivelog, útiles para la **auditoría forense** en bases de datos.
+
+### ¿Qué permite hacer?
+
+- Ver qué transacciones se han ejecutado.
+- Determinar quién hizo qué cambios en la base de datos.
+- Rastrear actividades sospechosas en entornos con base de datos crítica.
+
+### Uso típico en ciberseguridad:
+
+- Analizar actividad SQL inusual (borrado masivo de datos, accesos a tablas críticas).
+- Determinar el origen de una modificación en la base de datos tras un incidente.
+
+---
+
+## 📦 OSQuery
+
+**OSQuery** convierte el sistema operativo en una base de datos que permite hacer consultas SQL para extraer información.
+
+### ¿Qué permite?
+
+- Ver procesos activos, módulos cargados, puertos abiertos, usuarios conectados.
+- Crear consultas recurrentes y automatizar auditorías de seguridad.
+- Detectar cambios en archivos, instalación de software no autorizado, etc.
+
+---
+
+## 📁 Otras herramientas complementarias
+
+| Herramienta       | Descripción breve                                                 |
+|-------------------|--------------------------------------------------------------------|
+| **Auditd**        | Sistema de auditoría de Linux que registra eventos del kernel.     |
+| **NxLog**         | Recolector de logs multiplataforma, muy configurable.              |
+| **Graylog**       | SIEM open source con enfoque en búsquedas rápidas y paneles.       |
+| **Fluentd**       | Recolector de logs con soporte para múltiples formatos y destinos. |
+
+---
+
+## 🔐 Rol del Blue Team
+
+El **Blue Team** utiliza estas herramientas para:
+
+- Mantener una visibilidad detallada de todo lo que ocurre en los endpoints y la red.
+- Correlacionar eventos para descubrir ataques en curso o amenazas persistentes.
+- Responder rápidamente a incidentes detectados mediante las alertas generadas.
+- Establecer una línea base de comportamiento para detectar desviaciones.
+
+---
 ## 📌 Recomendaciones para el uso efectivo
 
 - Crear dashboards personalizados según el rol (SOC, Threat Hunter, CISO).
