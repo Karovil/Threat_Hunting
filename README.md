@@ -11,3 +11,5 @@ En un entorno digital cada vez más complejo y amenazado, la ciberseguridad ya n
 Esta integración permite que los hallazgos de los cazadores de amenazas sean aprovechados de inmediato por el equipo de respuesta, mejorando la velocidad, la precisión y el impacto de las acciones defensivas. Además, fomenta un ciclo de mejora continua, donde cada incidente detectado y contenido contribuye al aprendizaje organizacional, la actualización de herramientas y procedimientos, y la preparación frente a futuras amenazas.
 
 En este módulo se analiza cómo funciona esta coordinación, qué herramientas y procesos la hacen posible, y cómo puede ser aplicada en instituciones como el SENA para fortalecer su postura de seguridad digital de manera sostenible y estratégica.
+
+**Tabla de Contenido**
