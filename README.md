@@ -27,7 +27,7 @@ Uso de SIEM y EDR para la monitorización y detección.
 
 Análisis de logs, monitoreo de red y técnicas de automatización.
 
-🔹 Módulo 5: Técnicas y Procesos de Análisis
+🔹 [Módulo 5](https://github.com/Karovil/Threat_Hunting/tree/M%C3%B3dulo-5-T%C3%A9cnicas-y-Procesos-de-An%C3%A1lisis-Recopilaci%C3%B3n%2C-normalizaci%C3%B3n-y-an%C3%A1lisis-de-datos): Técnicas y Procesos de Análisis
 Recopilación, normalización y análisis de datos.
 
 Identificación de patrones anómalos y técnicas forenses.
