@@ -3,26 +3,58 @@
 ## 📄 Tabla de Contenidos
 <!-- TOC -->
 - [Introducción](#introducción)
-  - [¿Qué es?](#Qué-es)
-  - [Cómo funciona](#Cómo-funciona)
+  - [¿Qué es?](#introducción)
+  - [Cómo funciona](#introducción)
+    
 - [⚔️ Tácticas y Técnicas](#️tácticas-y-técnicas)
   - [TTPs (Tactics, Techniques, and Procedures)](#ttps-tactics-techniques-and-procedures)
   - [Living off the Land (LotL)](#living-off-the-land-lotl)
   - [Initial Access](#initial-access)
   - [Privilege Escalation](#privilege-escalation)
   - [Lateral Movement](#lateral-movement)
+    
 - [🧩 Indicadores y Artefactos](#-indicadores-y-artefactos)
   - [IOC](#-indicadores-y-artefactos)
   - [IOA](#-indicadores-y-artefactos)
   - [Hash](#-indicadores-y-artefactos)
-  - [Persistence Mechanism](#Persistence-Mechanism)
+  - [Persistence Mechanism](#-indicadores-y-artefactos)
+    
 - [📦 Herramientas y Frameworks](#-herramientas-y-frameworks)
+  - [MITRE ATT&CK](#-herramientas-y-frameworks)
+  - [Sigma Rules](#-herramientas-y-frameworks)
+  - [YARA](#-herramientas-y-frameworks)
+  - [Sysmon](#-herramientas-y-frameworks)
+  - [Velociraptor](#-herramientas-y-frameworks)
+    
 - [📈 Análisis y Detección](#-análisis-y-detección)
+  - [Event Correlation](#-análisis-y-detección)
+  - [False Positive](#-análisis-y-detección)
+  - [Noise vs Signal](#-análisis-y-detección)
+  - [Dwell Time](#-análisis-y-detección)
+
+
 - [🌐 Principios de Redes y Sistemas](#-principios-de-redes-y-sistemas)
-  - [🧠 Fundamentos de Redes](#-fundamentos-de-redes)
-  - [🧩 Fundamentos de Sistemas](#-fundamentos-de-sistemas)
-  - [🧠 Conocimientos Básicos en Arquitectura de Redes, Protocolos y Seguridad de Sistemas](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
-  - [🧩 Relación con Threat Hunting](#-Relación-con-Threat-Hunting)
+- [🧠 Fundamentos de Redes](#-fundamentos-de-redes)
+  - [Modelos de Referencia](#-fundamentos-de-redes)
+  - [Protocolos Clave](#-fundamentos-de-redes)
+  - [Topologías y Dispositivos](#-fundamentos-de-redes)
+    
+- [🧩 Fundamentos de Sistemas](#-fundamentos-de-sistemas)
+  -[Sistemas Operativos](#-fundamentos-de-sistemas)
+  -[Gestión de Usuarios y Permisos](#-fundamentos-de-sistemas)
+  -[Procesos, Servicios y Registro](#-fundamentos-de-sistemas)
+  -[Hardening y Supervisión](#-fundamentos-de-sistemas)
+  
+- [🧠 Conocimientos Básicos en Arquitectura de Redes, Protocolos y Seguridad de Sistemas](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  -[🏗️ Arquitectura de Redes](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  -[🧱 Elementos clave](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  -[Diseño seguro](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  -[📡 Protocolos de Comunicación](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  -[Protocolos comunes](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  -[🔐 Seguridad de Sistemas](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+  -[Conceptos fundamentales](#-conocimientos-básicos-en-arquitectura-de-redes-protocolos-y-seguridad-de-sistemas)
+    
+    - [🧩 Relación con Threat Hunting](#-Relación-con-Threat-Hunting)
 <!-- /TOC -->
 ---
 
