@@ -1,3 +1,5 @@
+Módulo 5: Técnicas y Procesos de Análisis
+
 Introduccion al Threat Hunting
 El Threat Hunting es la busqueda proactiva de amenazas en una red que han eludido las soluciones de seguridad tradicionales. A diferencia de la deteccion reactiva, el hunting implica analizar sistemas y eventos en busca de indicadores de compromiso (IoCs) o tacticas, tecnicas y procedimientos (TTPs) utilizados por atacantes.
 
