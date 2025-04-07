@@ -30,6 +30,105 @@ tcp.port == 443 and ip.dst == 192.168.1.50
 ```
 Este filtro muestra el tráfico HTTPS hacia un servidor específico.
 
+En **Threat Hunting**, los analistas usan filtros para identificar **actividades sospechosas**, como beaconing, exfiltración de datos o conexiones no autorizadas.
+
+---
+
+### 🔐 1. Filtrar tráfico por protocolo
+
+```wireshark
+http
+```
+Muestra solo paquetes del protocolo HTTP. Útil para analizar solicitudes web sin cifrado.
+```wireshark
+tls
+```
+Muestra tráfico cifrado TLS (HTTPS). Permite identificar dominios/contactos sin ver contenido.
+```wireshark
+dns
+```
+Muestra solo consultas/respuestas DNS. Ideal para detectar dominios maliciosos o tunneling.
+
+🌐 2. Filtrar por IP específica
+```wireshark
+ip.addr == 192.168.1.10
+```
+Muestra todo el tráfico hacia o desde esa IP. Útil para seguimiento de endpoints sospechosos.
+
+🧭 3. Filtrar por IP origen o destino
+```wireshark
+ip.src == 192.168.1.10
+```
+Solo muestra paquetes originados por esa IP.
+```wireshark
+ip.dst == 192.168.1.10
+```
+Solo muestra paquetes recibidos por esa IP.
+
+🛑 4. Filtrar conexiones rechazadas o reiniciadas
+```wireshark
+tcp.flags.reset == 1
+```
+Muestra paquetes TCP con el flag RST. Puede indicar escaneos, denegaciones o bloqueos.
+
+📥 5. Filtrar descargas sospechosas por puerto
+```wireshark
+tcp.port == 21
+```
+Muestra tráfico FTP (sin cifrar). Ideal para detectar exfiltración de datos.
+```wireshark
+tcp.port == 445
+```
+SMB: Puede ayudar a detectar movimiento lateral o ataques de ransomware.
+
+🔁 6. Filtrar paquetes retransmitidos o duplicados
+```wireshark
+tcp.analysis.retransmission
+```
+Detecta retransmisiones, lo cual puede sugerir interrupciones o evasión de controles.
+```wireshark
+tcp.analysis.duplicate_ack
+```
+Muestra ACK duplicados. A veces asociado a intentos de evasión.
+
+🧫 7. Filtrar beaconing (comunicaciones repetidas)
+```wireshark
+frame.time_delta_displayed < 1
+ip.addr == X.X.X.X
+```
+Si una IP genera paquetes cada X segundos, puede indicar beaconing C2.
+
+🎯 8. Buscar tráfico a dominios maliciosos
+Filtrar tráfico DNS:
+```wireshark
+dns.qry.name contains "suspicious-domain.com"
+```
+Ver tráfico HTTPS posterior:
+```wireshark
+ip.addr == <IP del dominio> && tls
+```
+🧱 9. Filtrar conexiones con geolocalización sospechosa
+Consulta IP externas poco frecuentes:
+```wireshark
+ip.dst != 192.168.0.0/16 && ip.dst != 10.0.0.0/8
+```
+Muestra conexiones hacia internet (fuera de red local). Ideal para hunting de actividad no autorizada.
+
+✅ Tip Extra: Mostrar solo paquetes con errores
+```wireshark
+tcp.analysis.flags
+```
+Muestra solo paquetes con problemas detectados por Wireshark (retransmisiones, resets, etc).
+
+🧠 Buenas prácticas en el análisis con Wireshark
+Siempre usar filtros específicos para reducir el ruido.
+
+Exportar datos relevantes a logs .csv o .pcap para análisis posterior.
+
+Correlacionar hallazgos con logs de SIEM o EDR.
+
+Documentar patrones repetitivos (IoCs) encontrados.
+
 ---
 
 ## 🔧 Comandos Útiles para Análisis de Logs en Linux
