@@ -7,7 +7,15 @@ Este flujo muestra cómo debería funcionar una organización moderna en términ
 ## 🧩 Etapas del Flujo y Roles
 
 | Etapa | Actividad de **Threat Hunting** | Actividad de **IR (Incident Response)** |
-|-------|-------------------------------|----------------------|
+|-------|----------------------------------|------------------------------------------|
+| 1. Recolección | Recoge datos históricos y en tiempo real de logs, SIEM, EDR, endpoints. | Monitorea alertas en herramientas automáticas y valida eventos críticos. |
+| 2. Hipótesis | Formula hipótesis basadas en TTPs e IOCs usando inteligencia de amenazas. | Puede revisar eventos pasados o relacionados a la hipótesis planteada. |
+| 3. Detección | Encuentra actividad sospechosa no detectada por sistemas automáticos. | Confirma si la actividad constituye un incidente de seguridad. |
+| 4. Comunicación | Envía informe técnico con contexto, evidencia y recomendaciones. | Activa el playbook adecuado para iniciar la respuesta estructurada. |
+| 5. Coordinación | Apoya técnicamente al equipo IR, da seguimiento técnico al ataque. | Ejecuta acciones de contención, erradicación y recuperación. |
+| 6. Documentación | Registra hallazgos, rutas de ataque y patrones útiles para el futuro. | Documenta el incidente, la línea de tiempo, impacto y acciones tomadas. |
+| 7. Mejora Continua | Ajusta hipótesis, queries e integra nuevos IOCs al hunting. | Mejora políticas, reglas del SIEM/EDR y actualiza procedimientos. |
+
 
 ---
 
@@ -116,4 +124,4 @@ Cuando hunting e IR trabajan en sincronía:
 - Se responde con mayor precisión.
 - Se aprende y mejora constantemente.
 
-Esta integración es clave para instituciones como el **SENA**, que buscan adaptarse a un entorno digital en constante evolución.
+
