@@ -133,7 +133,7 @@ A continuación, se presentan algunos comandos esenciales con su respectiva desc
 
   -Con whois se determina que la IP pertenece a un proveedor sospechoso.
 
-## Caso 2: Detección de Beaconing
+### Caso 2: Detección de Beaconing
 Con iftop se detecta comunicación constante hacia una IP externa cada 5 segundos.
 
 Wireshark revela solicitudes HTTP vacías o repetidas.
