@@ -1,4 +1,15 @@
 # Fundamentos y Conceptos Clave de Ciberseguridad
+
+## 📄 Tabla de Contenidos
+<!-- TOC -->
+- [Introducción](#introducción)
+  - [¿Qué es?](#qué-es)
+  - [Cómo funciona](#cómo-funciona)
+- [⚔️ Tácticas y Técnicas](#️⚔️tácticas-y-técnicas)
+
+<!-- /TOC -->
+---
+
 ## Introducción
 Threat hunting o también conocido como “caza de amenazas cibernéticas”, se ha vuelto una pieza cada vez más vital para las organizaciones. Este mecanismo surge con el propósito de encontrar intrusiones y también para la prevención de estos.
 
@@ -14,14 +25,5 @@ La cacería de amenazas cibernéticas se caracteriza por su proactividad. No es 
 En lo que se centran es en adelantarse a las amenazas. Usa mecanismos de predicción, detección y respuesta.
 Estos hunters deben hacer hipótesis para así hallar un propósito al ataque y deducir que quería el atacante y como prevenir futuros ataques.
 
-**Table of Contents**
-
-  <!-- TOC -->
-- [Terminología esencial](#Introducción)
-    - [¿Qué es?](#¿Que-es?)
-    - [Como funciona](Como-funciona)
-- [⚔️Tácticas y Técnicas](#Tácticas-y-Técnicas)
-- [Conclusión](#conclusión)
-<!-- /TOC -->
 
 ### ⚔️Tácticas y Técnicas
