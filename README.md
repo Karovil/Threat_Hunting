@@ -18,7 +18,7 @@ Estos hunters deben hacer hipótesis para así hallar un propósito al ataque y 
 
   <!-- TOC -->
 - [Terminología esencial](#Introducción)
-    - [¿Que es?](#¿Qué-es?)
+    - [¿Qué es?](#¿Que-es?)
     - [Como funciona](Como-funciona)
 - [⚔️Tácticas y Técnicas](#Tácticas-y-Técnicas)
 - [Conclusión](#conclusión)
