@@ -26,7 +26,7 @@ En este módulo se analiza cómo funciona esta coordinación, qué herramientas 
 - [📈 5. Mejora Continua: Clave para una Seguridad Evolutiva](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-7-Integraci%C3%B3n-con-la-Respuesta-a-Incidentes-y-Mejora-Continua-Coordinaci%C3%B3n-con-equipos-de-respuesta-a-incidentes/Tabla%20de%20Contenido/Mejora%20Continua.md)
 - [📚 6. Buenas Prácticas para una Integración Efectiva](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-7-Integraci%C3%B3n-con-la-Respuesta-a-Incidentes-y-Mejora-Continua-Coordinaci%C3%B3n-con-equipos-de-respuesta-a-incidentes/Tabla%20de%20Contenido/Buenas%20Pr%C3%A1cticas%20para%20una%20Integraci%C3%B3n%20Efectiva.md)
 - [🧩 7. Beneficios de esta integración para una institución como el SENA](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-7-Integraci%C3%B3n-con-la-Respuesta-a-Incidentes-y-Mejora-Continua-Coordinaci%C3%B3n-con-equipos-de-respuesta-a-incidentes/Tabla%20de%20Contenido/Beneficios%20de%20esta%20integraci%C3%B3n.md)
-- [✅ Conclusión](#-conclusión)
+- [✅ Conclusión](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-7-Integraci%C3%B3n-con-la-Respuesta-a-Incidentes-y-Mejora-Continua-Coordinaci%C3%B3n-con-equipos-de-respuesta-a-incidentes/Tabla%20de%20Contenido/conclucion.md)
 
 ---
 
