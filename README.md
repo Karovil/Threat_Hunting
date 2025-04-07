@@ -22,7 +22,7 @@ En este módulo se analiza cómo funciona esta coordinación, qué herramientas 
 - [🔐 1. ¿Qué es la Respuesta a Incidentes y por qué se vincula con el Threat Hunting?](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-7-Integraci%C3%B3n-con-la-Respuesta-a-Incidentes-y-Mejora-Continua-Coordinaci%C3%B3n-con-equipos-de-respuesta-a-incidentes/Tabla%20de%20Contenido/%F0%9F%94%90Respuesta%20a%20Incidentes.md)
 - [🧠 2. Flujo de Integración Operativa: Threat Hunting + IR](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-7-Integraci%C3%B3n-con-la-Respuesta-a-Incidentes-y-Mejora-Continua-Coordinaci%C3%B3n-con-equipos-de-respuesta-a-incidentes/Tabla%20de%20Contenido/Flujo%20de%20Integraci%C3%B3n%20Operativa.md)
 - [🛠️ 3. Herramientas que facilitan la integración](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-7-Integraci%C3%B3n-con-la-Respuesta-a-Incidentes-y-Mejora-Continua-Coordinaci%C3%B3n-con-equipos-de-respuesta-a-incidentes/Tabla%20de%20Contenido/herramientas.md)
-- [🧪 4. Ejemplo Real de Integración Exitosa](#4-caso-real-solarwinds-2020)
+- [🧪 4. Ejemplo Real de Integración Exitosa](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-7-Integraci%C3%B3n-con-la-Respuesta-a-Incidentes-y-Mejora-Continua-Coordinaci%C3%B3n-con-equipos-de-respuesta-a-incidentes/Tabla%20de%20Contenido/Ejemplo%20Real%20de%20Integraci%C3%B3n%20Exitosa.md)
 - [📈 5. Mejora Continua: Clave para una Seguridad Evolutiva](#5-mejora-continua)
 - [📚 6. Buenas Prácticas para una Integración Efectiva](#6-buenas-prácticas)
 - [🧩 7. Beneficios de esta integración para una institución como el SENA](#7-impacto-para-el-sena)
