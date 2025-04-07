@@ -22,7 +22,7 @@ Planteamiento de hipótesis para la detección proactiva.
 
 Frameworks clave: MITRE ATT&CK, Cyber Kill Chain, etc.
 
-🔹 Módulo 4: Herramientas y Plataformas
+🔹 [Módulo 4](https://github.com/Karovil/Threat_Hunting/tree/M%C3%B3dulo-4-Herramientas-y-Plataformas-Uso-de-SIEM-y-EDR-para-la-monitorizaci%C3%B3n-y-detecci%C3%B3n): Herramientas y Plataformas
 Uso de SIEM y EDR para la monitorización y detección.
 
 Análisis de logs, monitoreo de red y técnicas de automatización.
