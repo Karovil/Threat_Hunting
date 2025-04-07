@@ -5,7 +5,7 @@
 - [Introducción](#introducción)
   - [¿Qué es?](#qué-es)
   - [Cómo funciona](#cómo-funciona)
-- [⚔️ Tácticas y Técnicas](#️⚔️tácticas-y-técnicas)
+- [⚔️ Tácticas y Técnicas](#️tácticas-y-técnicas)
 
 <!-- /TOC -->
 ---
