@@ -98,21 +98,27 @@ netstat -ano | grep :80
 ### 🔍 Filtros y Comandos Útiles en Linux para Análisis de Red
 Comando	Descripción
 
--netstat -tulnp	Muestra puertos abiertos y servicios asociados.
--lsof -i	Lista procesos que usan la red.
--ss -tulwn	Alternativa moderna a netstat.
--arp -a	Muestra la tabla ARP de la red local.
--ping, traceroute	Diagnóstico básico de conectividad.
--whois, dig, nslookup	Recolección de información sobre dominios e IPs.
-🧠 Casos de Uso y Aplicación en Threat Hunting
+  -netstat -tulnp	Muestra puertos abiertos y servicios asociados.
+  
+  -lsof -i	Lista procesos que usan la red.
+  
+  -ss -tulwn	Alternativa moderna a netstat.
+  
+  -arp -a	Muestra la tabla ARP de la red local.
+  
+  -ping, traceroute	Diagnóstico básico de conectividad.
+  
+  -whois, dig, nslookup	Recolección de información sobre dominios e IPs.
+  
+## 🧠 Casos de Uso y Aplicación en Threat Hunting
 ### Caso 1: Exfiltración de Datos
-Se detecta un pico de tráfico de salida con nload.
+  -Se detecta un pico de tráfico de salida con nload.
 
-Se analiza con tcpdump y Wireshark.
+  -Se analiza con tcpdump y Wireshark.
 
-Se identifica un ZIP cifrado saliendo hacia una IP extranjera.
+  -Se identifica un ZIP cifrado saliendo hacia una IP extranjera.
 
-Con whois se determina que la IP pertenece a un proveedor sospechoso.
+  -Con whois se determina que la IP pertenece a un proveedor sospechoso.
 
 ## Caso 2: Detección de Beaconing
 Con iftop se detecta comunicación constante hacia una IP externa cada 5 segundos.
