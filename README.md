@@ -3,8 +3,8 @@
 ## 📄 Tabla de Contenidos
 <!-- TOC -->
 - [Introducción](#introducción)
-  - [¿Qué es?](#-qué-es)
-  - [Cómo funciona](#-cómo-funciona)
+  - [¿Qué es?](#Qué-es)
+  - [Cómo funciona](#Cómo-funciona)
 - [⚔️ Tácticas y Técnicas](#️tácticas-y-técnicas)
 
 <!-- /TOC -->
@@ -17,7 +17,7 @@ Threat hunting o también conocido como “caza de amenazas cibernéticas”, se
   
 Es un proceso centrado en el análisis humano y del software en la búsqueda de actividades anormales en los activos de la organización.
 
-- Como funciona
+- Cómo funciona
   
 Este al igual que un cazador de la antigüedad, hay que hacer reconocimiento del lugar donde se encuentra la presa. Por esta razón, el proceso del hunter es analizar el sistema, conocerlo a profundidad, e identificar las actividades anormales.
 Este hunter tiene las herramientas e instrumentos necesarios para hacer un debido procedimiento, ellos aparecen al ya haber pasado un ataque o mientras está pasando.
