@@ -88,7 +88,8 @@ Desplazamiento entre sistemas dentro de una red una vez comprometido un punto in
 
 ## 📦 Herramientas y Frameworks
 
-- **[MITRE ATT&CK](https://attack.mitre.org/)**: Base de datos abierta para clasificar tácticas y técnicas de ataque.
+- **MITRE ATT&CK**: Base de datos abierta para clasificar tácticas y técnicas de ataque.
+  ´>https://attack.mitre.org/´
 - **Sigma Rules**: Reglas de detección que se adaptan a diferentes SIEMs.
 - **YARA**: Reglas para identificar archivos maliciosos.
 
