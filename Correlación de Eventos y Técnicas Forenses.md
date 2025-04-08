@@ -1,12 +1,10 @@
 # Correlación de Eventos y Técnicas Forenses en Threat Hunting
 
-¿Por qué correlacionar?
+## ¿Por qué correlacionar?
 En entornos complejos, los eventos maliciosos rara vez son obvios. Un solo intento de inicio de sesión fallido o un nuevo proceso ejecutado por powershell.exe pueden parecer inofensivos… hasta que se conectan con otra actividad que ocurre minutos antes o después.
 Correlacionar eventos es encontrar el hilo conductor entre piezas sueltas del rompecabezas.
 
-#
-
-Caso práctico: ¿Ataque o coincidencia?
+## Caso práctico: ¿Ataque o coincidencia?
 Imagina que ves esto en los logs:
 
 Inicio de sesión exitoso desde una IP extranjera.
@@ -20,10 +18,7 @@ Pero si los correlacionas temporalmente y por hostname, el patrón es claro: mov
 
 💡 Insight clave: Lo que no parece una amenaza cuando se analiza en silos, se convierte en una alerta crítica cuando se ve como parte de una cadena.
 
-#
-
-Técnicas para correlacionar como un pro
-La correlación puede hacerse de varias maneras:
+## La correlación puede hacerse de varias maneras:
 
 Por tiempo: Eventos que ocurren en un intervalo pequeño, relacionados por usuario, IP o host.
 
@@ -38,7 +33,7 @@ source:winlogbeat AND (EventID:4624 OR EventID:4720) AND host:server01
 ````
 Esta consulta busca inicios de sesión y creación de cuentas en un mismo host. Es un punto de partida para la correlación manual.
 
-Entra la parte forense 🧬
+## Entra la parte forense 🧬
 Correlacionar te dice qué pasó. El análisis forense te dice cómo pasó y qué dejó atrás.
 Aquí es donde entran herramientas especializadas:
 
@@ -50,9 +45,7 @@ Autopsy: Suite forense completa que permite examinar discos, extraer metadatos, 
 
 🧠 Dato importante: La memoria no miente. Aunque un atacante borre logs del sistema, los procesos y conexiones quedan en la RAM por un tiempo. Ahí es donde entra Volatility.
 
-#
-
-¿Y qué papel juegan YARA y Sigma?
+## ¿Y qué papel juegan YARA y Sigma?
 YARA te permite definir firmas basadas en patrones binarios o cadenas en archivos/memoria.
 Sigma, por otro lado, te permite definir condiciones específicas en logs para detectar comportamientos sospechosos.
 
@@ -70,9 +63,8 @@ detection:
  ```` 
 Estas reglas se pueden convertir automáticamente al lenguaje de tu SIEM (Splunk, Graylog, Elastic, etc.), permitiendo detección automatizada basada en lo aprendido durante el análisis.
 
-#
 
-Bonus: Ciclo real de hunting + forense
+## Bonus: Ciclo real de hunting + forense
 Detectas un inicio de sesión fuera del horario habitual.
 
 Correlacionas con logs de procesos: ves ejecución de cmd.exe.
@@ -85,9 +77,7 @@ Mapear los eventos a MITRE ATT&CK te muestra que el atacante usó T1059 (Command
 
 🎯 Resultado: Construiste una narrativa completa del ataque.
 
-#
-
-Cierre
+## Cierre
 Correlacionar eventos y aplicar técnicas forenses es lo que convierte a un analista en cazador. No se trata solo de ver qué pasó, sino de entender por qué, cómo y con qué fin.
 
 Un buen hunter sabe que los logs no cuentan la historia completa hasta que los unes con intención y contexto.
