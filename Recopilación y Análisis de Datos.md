@@ -69,10 +69,12 @@ Objetivo: Detectar un posible movimiento lateral basado en autenticaciones sospe
 Pasos:
 
 1. Filtra todos los logs con EventID 4624 (logins exitosos).
+![image](https://github.com/user-attachments/assets/45f5a309-b2dd-41a0-a730-4cb349b2d59e)
 
 2. Busca usuarios que normalmente acceden desde ciertos hosts, conectándose desde otros nuevos.
 
 3. Cruza la información con eventos de cmd.exe ejecutado tras el login.
+![image](https://github.com/user-attachments/assets/05cb50db-bf63-4d8a-8c64-535e1e3cc8c6)
 
 Pregunta clave: ¿Hay alguna coincidencia entre autenticaciones inusuales y ejecución de comandos administrativos?
 
