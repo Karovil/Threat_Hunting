@@ -3,7 +3,7 @@
 Introduccion al Threat Hunting
 El Threat Hunting es la busqueda proactiva de amenazas en una red que han eludido las soluciones de seguridad tradicionales. A diferencia de la deteccion reactiva, el hunting implica analizar sistemas y eventos en busca de indicadores de compromiso (IoCs) o tacticas, tecnicas y procedimientos (TTPs) utilizados por atacantes.
 
-1. Recopilacion y Analisis de Datos
+## 1. Recopilacion y Analisis de Datos
 
 Recoleccion de Datos
 Fuentes principales:
@@ -34,7 +34,7 @@ Analisis de Datos
 - Analisis de series temporales: identificar variaciones a lo largo del tiempo.
 - Dashboards y visualizacion: usar Kibana, Grafana o Splunk para representar datos de forma visual.
 
-2. Correlacion de Eventos y Tecnicas Forenses
+## 2. Correlacion de Eventos y Tecnicas Forenses
 
 Correlacion de Eventos
 Permite unir multiples eventos relacionados para identificar actividad maliciosa compleja.
@@ -55,7 +55,7 @@ Tecnicas Forenses
 - Timeline forensics (Plaso, log2timeline).
 - Analisis de registros (accesos, errores del sistema).
 
-3. Deteccion de Patrones y Anomalias
+## 3. Deteccion de Patrones y Anomalias
 
 Identificacion de Comportamientos Anomalos
 Tipos de anomalias:
@@ -74,7 +74,7 @@ Identificacion de Patrones Maliciosos
 - Comunicacion con dominios de C2.
 - Secuencia de tecnicas segun MITRE ATT&CK.
 
-Herramientas Recomendadas
+## Herramientas Recomendadas
 Herramienta       | Uso principal
 ------------------|-----------------------------
 Splunk/ELK/Graylog| Agregacion y visualizacion
