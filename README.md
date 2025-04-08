@@ -1,5 +1,5 @@
 # Módulo 1: Introducción al Threat Hunting
-Este repositorio proporciona recursos para aprender y aplicar Threat Hunting de manera efectiva. Se basa en un enfoque estructurado para la detección proactiva de amenazas, combinando teoría, metodologías, herramientas y ejercicios prácticos.
+Este módulo introduce los fundamentos del Threat Hunting (caza de amenazas), una disciplina clave dentro de la ciberseguridad moderna. A través de este contenido, se explora qué es el hunting, en qué se diferencia de otras actividades como el análisis forense o la respuesta a incidentes, y por qué es esencial adoptar un enfoque proactivo frente a las amenazas actuales. Además, se presentan casos reales que demuestran su valor y utilidad en entornos corporativos y críticos.
 
 📚 Contenido del Repositorio
 
