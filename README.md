@@ -4,11 +4,13 @@ Este módulo introduce los fundamentos del Threat Hunting (caza de amenazas), un
 📚 Contenido del Repositorio
 ## 📌 Contenido del Módulo
 
-- 🔍 ¿Qué es el Threat Hunting?
-- ⚔️ Diferencias con otras disciplinas de ciberseguridad
-- 🚨 Casos reales que resaltan su importancia
-- 🧠 ¿Para qué se hace? (sin mencionar directamente "el objetivo")
-- 📚 Recursos recomendados para profundizar
+### 🎯 Objetivos y relevancia:
+- Qué es el threat hunting y cómo se diferencia de otras actividades de ciberseguridad.
+- La importancia de adoptar un enfoque proactivo en la detección de amenazas.
+
+### 🌐 Contexto y panorama actual:
+- Evolución de las amenazas y el papel del threat hunting en el entorno actual.
+- Casos recientes que resaltan la necesidad de esta disciplina.
 
 ---
 
