@@ -40,10 +40,3 @@ Esta sección reúne documentación oficial, herramientas, laboratorios, libros 
 - **QRadar** – [https://www.ibm.com/qradar](https://www.ibm.com/qradar)
 - **SentinelOne, Microsoft Defender ATP, CrowdStrike Falcon** – Soluciones EDR modernas
 
-
-## 🧪 Laboratorios y Simuladores
-
-- [RangeForce CyberSkills Platform](https://www.rangeforce.com/)
-- [TryHackMe - Threat Hunting Room](https://tryhackme.com/room/threathunting)
-- [CyberDefenders Labs](https://cyberdefenders.org/)
-- [DetectionLab (Chris Long)](https://github.com/clong/DetectionLab)
