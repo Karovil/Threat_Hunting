@@ -28,7 +28,7 @@ Este módulo introduce los fundamentos del Threat Hunting (caza de amenazas), un
 |--------|-------------|
 | `diferencias.md` | Explica cómo se diferencia el hunting de otras áreas de ciberseguridad. |
 | `casos-reales.md` | Ejemplos concretos que muestran por qué esta disciplina es necesaria. |
-| `para-que-se-hace.md` | Sección que explica la razón de ser del Threat Hunting sin usar la palabra “objetivo”. |
+| `que-es.md` | Sección que explica la razón de ser del Threat Hunting . |
 | `recursos.md` | Enlaces útiles y documentación para aprender más. |
 
 ---
