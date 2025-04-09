@@ -47,13 +47,7 @@ Monitoreo de Red/
 
 herramientas_red.md - Uso de Wireshark, Suricata y Zeek.
 
-Automatización y Analítica/
 
-introduccion_automatizacion.md - Conceptos básicos de automatización.
-
-machine_learning_seguridad.md - Uso de ML en detección de amenazas.
-
-scripts_automatizacion/ - Carpeta con ejemplos de scripts.
 
 🚀 Cómo Usar este Módulo
 
