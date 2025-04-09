@@ -2,6 +2,7 @@
 # Simulador de Ataques SSH
 
 Este repositorio contiene el script `.sh` que puedes usar para simular múltiples intentos de acceso SSH fallidos ala maquina para despues  poder monitorearlo.
+como requisito debes tener instaldo sshpass.
 
 ## 📜 Script
 
