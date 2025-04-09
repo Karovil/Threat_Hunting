@@ -22,8 +22,11 @@ sudo make install ```
 
 Comprueba que tienes la versión vulnerable instalada ejecutando:
 
-```bash
 xz --version
+
+
+
+
 
 
 
