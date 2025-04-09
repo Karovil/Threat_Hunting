@@ -15,6 +15,13 @@ Este repositorio está pensado para:
 
 ---
 
-> 
+
+## 📎 Acceso a los Informes en PDF
+
+Puedes acceder a los informes completos en el siguiente enlace de Google Drive:
+
+🔗 [Ver informes en Google Drive](https://drive.google.com/drive/folders/1RALEtTcYBk4d6hd3ENhubEo2wj29NcTY?usp=sharing)
+
+---
 
 
