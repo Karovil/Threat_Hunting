@@ -3,7 +3,7 @@
 
 Este repositorio contiene el script `.sh` que puedes usar para simular múltiples intentos de acceso SSH fallidos ala maquina para despues  poder monitorearlo.
 
-Como requisito debes tener instaldo sshpass.
+Como requisito debes tener instaldo sshpass, Tambien deben darle permisos para poder ejecutarlo.
 
 ## 📜 Script
 
