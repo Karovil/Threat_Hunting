@@ -83,4 +83,5 @@ Velociraptor/KAPE | Recoleccion forense
 Sigma/YARA        | Reglas de deteccion
 OSQuery           | Consultas del sistema
 DeimosC2          | Emulacion de amenazas
-
+Autopsy/FTKimager | Forence
+Volatility        | Dump RAM
