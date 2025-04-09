@@ -15,6 +15,6 @@ Este repositorio está pensado para:
 
 ---
 
-> 🧠 **Nota:** Todo el contenido aquí presente tiene fines educativos y se ha desarrollado en entornos controlados.
+> 
 
 
