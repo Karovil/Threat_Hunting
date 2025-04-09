@@ -1,45 +1,56 @@
-# Threat Hunting
-Este repositorio proporciona recursos para aprender y aplicar Threat Hunting de manera efectiva. Se basa en un enfoque estructurado para la detección proactiva de amenazas, combinando teoría, metodologías, herramientas y ejercicios prácticos.
+# Threat Hunting Modulo 6 Casos practicos y simulaciones.
 
-📚 Contenido del Repositorio
+## Para simular el caso de xz.
+
+### Aca pueden encontrar la version vulnerable de xz utils.
+
+https://launchpad.net/debian/+source/xz-utils/5.6.0-0.2
+
+Cuando lo tengan descargado dentro de el directorio que lo contiene ejecutan:
+
+´´´ bash 
+./configure
+make
+sudo make install
+´´´ 
+con esto lo compilan e instalan
+
+xz --version
+con  este pueden ver la version (debe ser la 5.6.0)
 
 
 
-🔹 Módulo 1: Introducción al Threat Hunting
-Definición y diferencias con otras actividades de ciberseguridad.
+Este es el script .sh que pueden usar para simular el ataque ssh
 
-Importancia del enfoque proactivo en la detección de amenazas.
+#!/bin/bash
 
-Panorama actual de amenazas y casos recientes.
+# Configuración
+USUARIO="atacante"
+IP="127.0.0.1"
+PASSWORD="contraseña123"
+INTENTOS=20
 
-🔹 Módulo 2: Fundamentos y Conceptos Clave de Ciberseguridad
-Terminología esencial: adversarios, TTPs, IOCs, entre otros.
+echo "[*] Simulando $INTENTOS intentos SSH contra $IP con el usuario $USUARIO..."
+echo
 
-Arquitectura de redes, protocolos y seguridad de sistemas.
+for i in $(seq 1 $INTENTOS); do
+  echo "[$i] Intento SSH #$i"
+  sshpass -p "$PASSWORD" ssh -o StrictHostKeyChecking=no -o ConnectTimeout=2 $USUARIO@$IP "echo 'Acceso SSH simulado: $i'"
+  sleep 1
+done
 
-🔹 Módulo 3: Metodologías y Frameworks de Threat Hunting
-Planteamiento de hipótesis para la detección proactiva.
+echo
+echo "[+] Simulación terminada."
 
-Frameworks clave: MITRE ATT&CK, Cyber Kill Chain, etc.
+Para poder ejecutarlo deben tener instalado sshpass
 
-🔹 Módulo 4: Herramientas y Plataformas
-Uso de SIEM y EDR para la monitorización y detección.
+Tambien deben darle permisos para poder ejecutarlo
+chmod +x simulador_ssh.sh
 
-Análisis de logs, monitoreo de red y técnicas de automatización.
+para ejecutar el script simplemente:
+./simulador_ssh.sh
 
-🔹 Módulo 5: Técnicas y Procesos de Análisis
-Recopilación, normalización y análisis de datos.
 
-Identificación de patrones anómalos y técnicas forenses.
 
-🔹 Módulo 6: Casos Prácticos y Simulaciones
-Análisis de incidentes reales documentados.
 
-Laboratorios y ejercicios prácticos de threat hunting.
 
-🔹 Módulo 7: Integración con la Respuesta a Incidentes y Mejora Continua
-Coordinación con equipos de respuesta a incidentes.
-
-Coordinación con equipos de respuesta a incidentes.
-
-Documentación, actualización y mejora de procesos.
