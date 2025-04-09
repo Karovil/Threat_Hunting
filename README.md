@@ -1,4 +1,8 @@
-# 🛡 Threat Hunting - Módulo 6: Casos Prácticos y Simulaciones  
+# 🛡 Threat Hunting - Módulo 6: Casos Prácticos y Simulaciones 
+
+🔗 Puedes encontrar la versión vulnerable de **video aqui** aquí:  
+[https://www.youtube.com/watch?v=7UIKkJ6OWpY](https://www.youtube.com/watch?v=7UIKkJ6OWpY)
+
 ## Simulación del Caso XZ y Ataque SSH (Threat Hunting)
 
 ---
