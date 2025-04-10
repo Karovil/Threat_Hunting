@@ -2,9 +2,6 @@
 
 ## 📄 Tabla de Contenidos
 <!-- TOC -->
-- [Introducción](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-2-Fundamentos-y-Conceptos-Clave-de-Ciberseguridad-Terminolog%C3%ADa-esencial-adversarios%2C-TTPs%2C-IOCs%2C-entre-otros/README.md)
-  - [¿Qué es?](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-2-Fundamentos-y-Conceptos-Clave-de-Ciberseguridad-Terminolog%C3%ADa-esencial-adversarios%2C-TTPs%2C-IOCs%2C-entre-otros/README.md)
-  - [Cómo funciona](https://github.com/Karovil/Threat_Hunting/blob/M%C3%B3dulo-2-Fundamentos-y-Conceptos-Clave-de-Ciberseguridad-Terminolog%C3%ADa-esencial-adversarios%2C-TTPs%2C-IOCs%2C-entre-otros/README.md)
     
 - [⚔️ Tácticas y Técnicas](#️tácticas-y-técnicas)
   - [TTPs (Tactics, Techniques, and Procedures)](#ttps-tactics-techniques-and-procedures)
