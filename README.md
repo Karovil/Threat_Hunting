@@ -35,5 +35,5 @@ Este módulo introduce los fundamentos del Threat Hunting (caza de amenazas), un
 
 ## 🚀 Siguiente módulo
 
-👉 [Módulo 2: Fundamentos y Conceptos Clave de Ciberseguridad](../Fundamentos_y_Conceptos_Clave_de_Ciberseguridad/README.md) 
+👉 [Módulo 2: Fundamentos y Conceptos Clave de Ciberseguridad](https://github.com/Karovil/Threat_Hunting/tree/M%C3%B3dulo-2-Fundamentos-y-Conceptos-Clave-de-Ciberseguridad-Terminolog%C3%ADa-esencial-adversarios%2C-TTPs%2C-IOCs%2C-entre-otros) 
 
