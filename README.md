@@ -26,8 +26,6 @@ en busca de actividades sospechosas o maliciosas.
 
    Logs de autenticación
 
-  Datos de endpoints (EDR)
-
    Alertas SIEM (como Splunk)
 
   ### Herramientas comunes:
