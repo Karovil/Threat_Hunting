@@ -17,7 +17,7 @@ Terminología esencial: TTPs, IOCs, entre otros.
 
   Arquitecturas de redes, protocolos y seguridad de sistemas.
 
-🔹 [Módulo 3]((https://github.com/Karovil/Threat_Hunting/blob/main/Module3/Module3_README.md)): Metodologías y Frameworks de Threat Hunting
+🔹 [Módulo 3](https://github.com/Karovil/Threat_Hunting/blob/main/Module3/Module3_README.md): Metodologías y Frameworks de Threat Hunting
 Planteamiento de hipótesis para la detección proactiva.
 
 Frameworks clave: MITRE ATT&CK, Cyber Kill Chain, etc.
